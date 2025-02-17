@@ -1,0 +1,108 @@
+
+  /* Son variables personalizadas para utilizarlas en todo el archivo como var(--NmbVariable) */
+:root {
+    --bg-nav: #9cffcc;
+    --bg-selection: #0234ff;
+    --color-text: black;
+}
+
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+
+    /* 1 REM es igual a 10px */
+    font-size: 16px;
+    
+    /* Propiedades estandar de la fuente de letra */
+    font-family: "Pochaevsk", serif;
+    font-weight: 400;
+    font-style: normal;
+
+
+
+}
+
+.titulo {
+    text-align: center;
+    font-size: 3.8rem;
+}
+
+.titulo span{
+    font-size: 2rem;
+
+}
+
+.contenedor {
+    /* max-width no fuerza la medida de rems en el navegador, por lo que puede ser flexible en diferentes tamanos de celulares y elimina el scroll lateral*/
+    max-width: 120rem;
+
+    /* Para centrar el nav se utiliza el siguiente margin que significa  margin-top 0, margin-right auto, margin-botton 0 y margin-left 0*/
+    margin: 0 auto;
+
+
+}
+
+.nav-bg {
+    background-color: var(--bg-nav);
+
+}
+
+
+.navegacion-principal{
+  
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+/* Existen diferentes px para diferentes dispositivos, los mas comunes son 480px (celulares), 768px (tabletas), 1140px(computadoras), 1400px(televisores) */
+
+/*  A partir de los 768px hacia arriba nav empieza a mostrar los elementos como en una tableta*/
+@media (min-width: 768px ) { 
+    .navegacion-principal {
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+ 
+}
+
+
+/* Padding se implementa aqui porque 'a' al ser hijo de navegacion-principal(nav) puede modificar su tamano*/
+.navegacion-principal a{
+    color: var(--color-text);
+    padding: 2rem;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    
+  }
+
+.navegacion-principal a:hover{
+    background-color: white;
+    color: var(--bg-selection);
+    
+}
+
+
+.hero{
+        background-image: url(img/fondo-hero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 12rem;
+        height: 20rem;
+       
+       
+}
+
+
+
+
+
+
+
+
