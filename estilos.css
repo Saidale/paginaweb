@@ -96,11 +96,12 @@ body{
 
 
 .hero{
+
         background-image: url(img/fondo-hero.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         padding: 12rem;
-        height: 20rem;
+        height: 40rem;
        
        
 }
