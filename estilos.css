@@ -102,8 +102,19 @@ body{
         background-size: cover;
         padding: 12rem;
         height: 40rem;
+        position: relative;
        
        
+}
+
+.contenido-hero {
+        position: absolute;
+        background-color: red;
+        width: 2rem;
+        height: 2rem;
+        top: 0;
+        bottom: 0;
+
 }
 
 
