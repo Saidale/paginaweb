@@ -181,6 +181,7 @@ box-shadow: 0px 0px 64px -50px rgba(0,0,0,1);
     .servicios {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2rem;
     
      }
    }
